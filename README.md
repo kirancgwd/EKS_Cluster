@@ -12,14 +12,16 @@
 2. Open variable.tf and provide your SSH key name
 
    ![image](https://github.com/user-attachments/assets/b6c895ea-19b7-45bf-8d09-a62e0066d7c6)
-3. Run the follow commands
+   
+4. Run the follow commands
+   
    terraform init
 
    terraform plan
 
    terraform apply
 
-4. Update cluster name using below command
+5. Update cluster name using below command
 
 aws eks --region ap-south-1 update-kubeconfig --name kirancgwd-cluster
 
