@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nodejs-app
-        image: "kiranpkdocker/java-blogging-app:latest"
+        image: "kiranpkdocker/MyYoutube-app:latest"
         ports:
           - containerPort: 8082
 ---
