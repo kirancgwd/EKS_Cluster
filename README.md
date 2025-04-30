@@ -1,19 +1,9 @@
 <<<<<<< HEAD
-# Deploy your Springboot application to AWS EC2
-
-### Deployment architecture
-
-![alt text](springboot-aws-deploy.png)
-
-## How to deploy
-
-TBD
-=======
-**EKS_Cluster**
+**Deploy your Springboot application to AWS EKS_Cluster**
 
 **Create EC2 Instance with t2.medium and 20GB storage**
 
-**Install Terraform in it**
+**Install Terraform in EC2**
 
 **Copy EKS_Terraform Folder and Deployment file EC2 server**
 
@@ -43,9 +33,14 @@ aws eks --region ap-south-1 update-kubeconfig --name kirancgwd-cluster
 **Create Docker image**
 
 1. docker pull kiranpkdocker/twitter-app
-3. kubectl apply -f deplyo.yml 
-    222  vim app.yml
-     kubectl get pods
-  234  kubectl get svc
+3. kubectl apply -f deplyo.yml
+4. vim deployment.yml
+5. Check the pods running or not
+   
+   kubectl get pods
+   
+7. Check Service
+
+   kubectl get svc
   
->>>>>>> temp-remote/main
+
