@@ -2,22 +2,22 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: nodejs-app
+  name: springboot-app
   namespace: default
   labels:
-    app: nodejs-app
+    app: springboot-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodejs-app
+      app: springboot-app
   template:
     metadata:
       labels:
-        app: nodejs-app
+        app: springboot-app
     spec:
       containers:
-      - name: nodejs-app
+      - name: springboot-app
         image: "kiranpkdocker/MyYoutube-app:latest"
         ports:
           - containerPort: 8082
@@ -25,11 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodejs-app
+  name: springboot-app
   namespace: default
 spec:
   selector:
-    app: nodejs-app
+    app: springboot-app
   type: LoadBalancer
   ports:
   - name: http
