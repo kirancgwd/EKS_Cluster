@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 **Deploy your Springboot application to AWS EKS_Cluster**
 
 **Create EC2 Instance with t2.medium and 20GB storage**
