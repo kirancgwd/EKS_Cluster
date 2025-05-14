@@ -33,9 +33,9 @@ aws eks --region ap-south-1 update-kubeconfig --name kirancgwd-cluster
 **Create Docker image**
 
 1. docker pull kiranpkdocker/twitter-app
-3. kubectl apply -f deplyo.yml
-4. vim deployment.yml
-5. Check the pods running or not
+2. vim deployment.yml
+3. kubectl apply -f deployment.yml
+4. Check the pods running or not
    
    kubectl get pods
    
