@@ -31,7 +31,7 @@ aws eks --region ap-south-1 update-kubeconfig --name kirancgwd-cluster
 
 **Create Docker image**
 
-1. docker pull kiranpkdocker/twitter-app
+1. docker pull kiranpkdocker/MyYoutube-app:latest
 2. vim deployment.yml
 3. kubectl apply -f deployment.yml
 4. Check the pods running or not
